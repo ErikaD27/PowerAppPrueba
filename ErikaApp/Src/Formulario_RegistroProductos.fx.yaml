@@ -3,8 +3,8 @@ Formulario_RegistroProductos As screen:
     FormularioProductos As form:
         BorderColor: =RGBA(0,200,0,0)
         DataSource: =registro_productos
-        DefaultMode: =FormMode.New
         Height: =635
+        Item: =Gallery4.Selected
         NumberOfColumns: =2
         OnSuccess: =Navigate(Succesfull)
         Width: =1322
@@ -624,4 +624,11 @@ Formulario_RegistroProductos As screen:
         Width: =784
         X: =272
         ZIndex: =4
+
+    Icon5 As icon.ChevronLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.ChevronLeft
+        X: =37
+        Y: =22
+        ZIndex: =5
 
