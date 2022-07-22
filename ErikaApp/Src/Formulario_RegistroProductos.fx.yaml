@@ -3,6 +3,7 @@ Formulario_RegistroProductos As screen:
     FormularioProductos As form:
         BorderColor: =RGBA(0,200,0,0)
         DataSource: =registro_productos
+        DefaultMode: =FormMode.New
         Height: =635
         Item: =Gallery4.Selected
         NumberOfColumns: =2
@@ -16,13 +17,13 @@ Formulario_RegistroProductos As screen:
             BorderColor: =RGBA(200, 80, 114, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="nombreProducto"
-            Default: =ThisItem.nombreProducto
+            Default: =ThisItem.'Nombre Producto'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@registro_productos],DataSourceInfo.DisplayName,"nombreProducto")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@registro_productos], DataSourceInfo.MaxLength, "nombreProducto")
-            Required: =false
+            Required: =true
             Update: =DataCardValue1.Text
             Width: =661
             X: =0
@@ -217,7 +218,7 @@ Formulario_RegistroProductos As screen:
 
             DataCardValue4 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =If(FormularioProductos.Mode = FormMode.New,Today(),Parent.Default)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(200, 80, 114, 1)
@@ -632,4 +633,11 @@ Formulario_RegistroProductos As screen:
         X: =37
         Y: =22
         ZIndex: =5
+
+    Icon3 As icon.Cancel:
+        Icon: =Icon.Cancel
+        OnSelect: =ResetForm(FormularioProductos)
+        X: =1237
+        Y: =22
+        ZIndex: =6
 

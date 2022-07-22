@@ -22,7 +22,7 @@ Galeria_RegistroProductos As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.Disabled
         Icon: =Icon.Add
-        OnSelect: =ResetForm(FormularioProductos);NewForm(FormularioProductos);Navigate(Formulario_RegistroProductos)
+        OnSelect: =ResetForm(FormularioProductos);NewForm(FormularioProductos);Navigate(FormularioProductos)
         X: =1233
         Y: =18
         ZIndex: =4
@@ -79,7 +79,7 @@ Galeria_RegistroProductos As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.nombreProducto
+            Text: =ThisItem.'Nombre Producto'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image6.Width - 104
             X: =Image6.X + Image6.Width + 24
