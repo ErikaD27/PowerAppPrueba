@@ -29,7 +29,7 @@ Galeria_RegistroProductos As screen:
 
     Txt1 As text:
         BorderColor: =RGBA(251, 188, 159, 1)
-        Default: ="Entrada de texto"
+        Default: =
         Height: =59
         Width: =391
         X: =941

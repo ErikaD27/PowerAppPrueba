@@ -628,6 +628,7 @@ Formulario_RegistroProductos As screen:
     Icon5 As icon.ChevronLeft:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.ChevronLeft
+        OnSelect: =Navigate(Galeria_RegistroProductos)
         X: =37
         Y: =22
         ZIndex: =5
