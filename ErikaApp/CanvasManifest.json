@@ -102,6 +102,8 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Galeria_RegistroProductos",
+    "Formulario_RegistroProductos",
+    "Succesfull"
   ]
 }
