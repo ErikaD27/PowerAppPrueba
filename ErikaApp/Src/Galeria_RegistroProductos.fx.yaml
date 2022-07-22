@@ -20,10 +20,11 @@ Galeria_RegistroProductos As screen:
 
     Icon2 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
         Icon: =Icon.Add
         OnSelect: =ResetForm(FormularioProductos);NewForm(FormularioProductos);Navigate(Formulario_RegistroProductos)
-        X: =40
-        Y: =36
+        X: =1233
+        Y: =18
         ZIndex: =4
 
     Txt1 As text:
