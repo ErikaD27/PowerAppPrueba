@@ -261,7 +261,7 @@ Formulario_RegistroProductos As screen:
             BorderColor: =RGBA(200, 80, 114, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="correoFabricante"
-            Default: =ThisItem.correoFabricante
+            Default: =ThisItem.'Correo Fabricante'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@registro_productos],DataSourceInfo.DisplayName,"correoFabricante")
             Fill: =RGBA(0, 0, 0, 0)

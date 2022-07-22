@@ -4,7 +4,8 @@ Galeria_RegistroProductos As screen:
         BorderColor: =RGBA(251, 188, 159, 1)
         Fill: =RGBA(251, 188, 159, 1)
         Width: =1311
-        X: =55
+        X: =8
+        Y: =4
         ZIndex: =2
 
     Label1_1 As label:
@@ -122,6 +123,7 @@ Galeria_RegistroProductos As screen:
             ZIndex: =6
 
     Icon6 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Add
         OnSelect: =ResetForm(FormularioProductos);NewForm(FormularioProductos);Navigate(Formulario_RegistroProductos)
         X: =40
