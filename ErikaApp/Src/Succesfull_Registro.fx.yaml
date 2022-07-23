@@ -39,3 +39,24 @@
         Y: =40
         ZIndex: =4
 
+    Icon9 As icon.ChevronRight:
+        Icon: =Icon.ChevronRight
+        OnSelect: =Navigate(Galeria_OrdenProductos)
+        X: =1254
+        Y: =24
+        ZIndex: =5
+
+    Label5 As label:
+        Color: =RGBA(250, 155, 112, 1)
+        Text: ="Galeria Registro de Productos"
+        X: =115
+        Y: =52
+        ZIndex: =6
+
+    Label5_1 As label:
+        Color: =RGBA(0, 16, 96, 1)
+        Text: ="Galeria Ordenes de Productos"
+        X: =1088
+        Y: =40
+        ZIndex: =7
+

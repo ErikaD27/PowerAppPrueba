@@ -1,19 +1,25 @@
 Galeria_OrdenProductos As screen:
+    Fill: =
+    OnHidden: =true
+    OnVisible: =true
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =562
+        BorderThickness: =1
+        Fill: =RGBA(60, 20, 10, 0)
+        Height: =546
         Items: |-
             =Search(orden_producto,
                 Txt2.Text,
                 "usuarioAprobador"
             )
         Layout: =Layout.Vertical
-        TabIndex: =2
+        TabIndex: =0.2
         TemplatePadding: =0
-        TemplateSize: =Min(168, Self.Height - 60)
+        TemplateSize: =Min(150, Self.Height - 60)
         Transition: =Transition.Push
-        X: =60
-        Y: =180
+        WrapCount: =
+        X: =54
+        Y: =156
         ZIndex: =1
 
         Title4 As label:
@@ -31,14 +37,15 @@ Galeria_OrdenProductos As screen:
             ZIndex: =1
 
         Subtitle3 As label:
+            FontWeight: =FontWeight.Bold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =25
             Text: =ThisItem.'Nombre de Producto'.Value
-            VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =Title4.Y + Title4.Height + 2
@@ -75,7 +82,7 @@ Galeria_OrdenProductos As screen:
             ZIndex: =4
 
         Separator4 As rectangle:
-            Height: =1
+            Height: =0
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
@@ -107,8 +114,8 @@ Galeria_OrdenProductos As screen:
         Default: =
         Height: =59
         Width: =391
-        X: =941
-        Y: =384
+        X: =844
+        Y: =367
         ZIndex: =8
 
     TextF2_1 As label:
@@ -120,14 +127,14 @@ Galeria_OrdenProductos As screen:
         Text: |-
             ="Ingrese el nombre del Usuario Aprobador:"
         Width: =429
-        X: =922
-        Y: =290
+        X: =825
+        Y: =276
         ZIndex: =11
 
     Icon6_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Add
-        OnSelect: =ResetForm([@FormularioProductos_1]);NewForm([@FormularioProductos_1]);Navigate(Formulario_OrdenProductos)
+        OnSelect: =ResetForm(FormularioOrden);NewForm(FormularioOrden);Navigate(Formulario_OrdenProductos)
         X: =40
         Y: =40
         ZIndex: =13
