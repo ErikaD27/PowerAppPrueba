@@ -534,3 +534,10 @@ Formulario_OrdenProductos As screen:
                 Y: =DataCardKey26.Y
                 ZIndex: =4
 
+    Icon2_1 As icon.Leave:
+        Icon: =Icon.Leave
+        OnSelect: =Navigate(Inicio)
+        X: =37
+        Y: =683
+        ZIndex: =9
+

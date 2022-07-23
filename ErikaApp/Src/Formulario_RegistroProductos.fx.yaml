@@ -650,3 +650,11 @@ Formulario_RegistroProductos As screen:
         Y: =22
         ZIndex: =6
 
+    Icon2 As icon.Leave:
+        Color: =RGBA(250, 155, 112, 1)
+        Icon: =Icon.Leave
+        OnSelect: =Navigate(Inicio)
+        X: =37
+        Y: =678
+        ZIndex: =7
+
