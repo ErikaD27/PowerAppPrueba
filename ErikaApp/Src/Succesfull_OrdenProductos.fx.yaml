@@ -42,3 +42,32 @@
         Y: =40
         ZIndex: =4
 
+    Icon9_1 As icon.ChevronRight:
+        Icon: =Icon.ChevronRight
+        OnSelect: =Navigate(Inicio)
+        X: =1254
+        Y: =24
+        ZIndex: =5
+
+    Label5_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 16, 96, 1)
+        Height: =65
+        Size: =20
+        Text: ="Volver al inicio"
+        Width: =197
+        X: =1040
+        Y: =40
+        ZIndex: =6
+
+    Label5_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 16, 96, 1)
+        Height: =65
+        Size: =20
+        Text: ="Ir a la Galeria de Orden de productos"
+        Width: =292
+        X: =137
+        Y: =50
+        ZIndex: =7
+
