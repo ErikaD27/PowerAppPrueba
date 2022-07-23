@@ -1,0 +1,134 @@
+Galeria_OrdenProductos As screen:
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =562
+        Items: |-
+            =Search(orden_producto,
+                Txt2.Text,
+                "usuarioAprobador"
+            )
+        Layout: =Layout.Vertical
+        TabIndex: =2
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Transition: =Transition.Push
+        X: =60
+        Y: =180
+        ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Numero de Orden'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Nombre de Producto'.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title4.Y + Title4.Height + 2
+            ZIndex: =2
+
+        Body2 As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Usuario Aprobador'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Subtitle3.Y + Subtitle3.Height + 4
+            ZIndex: =3
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(251, 188, 159, 1)
+        Fill: =RGBA(136, 160, 209, 1)
+        Height: =132
+        Width: =1343
+        X: =8
+        Y: =4
+        ZIndex: =2
+
+    Label1_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =10
+        Height: =136
+        Size: =40
+        Text: ="RESUMEN ORDENES DE PRODUCTOS"
+        Width: =784
+        X: =276
+        Y: =4
+        ZIndex: =3
+
+    Txt2 As text:
+        BorderColor: =RGBA(56, 96, 178, 1)
+        Default: =
+        Height: =59
+        Width: =391
+        X: =941
+        Y: =384
+        ZIndex: =8
+
+    TextF2_1 As label:
+        Color: =RGBA(0, 121, 187, 1)
+        DisabledBorderColor: =RGBA(221, 79, 14, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        Size: =20
+        Text: |-
+            ="Ingrese el nombre del Usuario Aprobador:"
+        Width: =429
+        X: =922
+        Y: =290
+        ZIndex: =11
+
+    Icon6_1 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Add
+        OnSelect: =ResetForm([@FormularioProductos_1]);NewForm([@FormularioProductos_1]);Navigate(Formulario_OrdenProductos)
+        X: =40
+        Y: =40
+        ZIndex: =13
+

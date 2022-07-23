@@ -26,5 +26,30 @@
     "dependencies": {},
     "dependents": [],
     "id": "58f4d8a4-a8c4-41a3-b5fa-3d8d59da81e5"
+  },
+  "9e076251-3321-4e58-87e3-7555f1e4a3e4": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://ccolabs.sharepoint.com/sites/CristianStivenApp": {
+        "dataSources": {
+          "orden_producto": {
+            "tableName": "0b9d9890-c5d9-4305-a437-fd87cf0aa60a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "orden_producto"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9e076251-3321-4e58-87e3-7555f1e4a3e4"
   }
 }

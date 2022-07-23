@@ -104,6 +104,8 @@
   "ScreenOrder": [
     "Galeria_RegistroProductos",
     "Formulario_RegistroProductos",
-    "Succesfull"
+    "Succesfull",
+    "Galeria_OrdenProductos",
+    "Formulario_OrdenProductos"
   ]
 }
