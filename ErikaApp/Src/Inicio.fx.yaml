@@ -1,0 +1,67 @@
+Inicio As screen:
+
+    Rectangle1_4 As rectangle:
+        BorderColor: =RGBA(127, 178, 57, 1)
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =121
+        Width: =1334
+        X: =8
+        Y: =4
+        ZIndex: =1
+
+    Label1_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =10
+        Height: =136
+        Size: =40
+        Text: ="¿A dónde deseas ingresar?"
+        Width: =797
+        X: =272
+        ZIndex: =2
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(251, 188, 159, 1)
+        Fill: =RGBA(250, 155, 112, 1)
+        Height: =302
+        OnSelect: =Navigate(Galeria_RegistroProductos)
+        Tooltip: =
+        Width: =353
+        X: =146
+        Y: =205
+        ZIndex: =5
+
+    Label4 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =173
+        Size: =25
+        Text: ="Ingresar a la Galería de Registro de Productos"
+        Width: =281
+        X: =182
+        Y: =269
+        ZIndex: =6
+
+    Rectangle2_1 As rectangle:
+        BorderColor: =RGBA(251, 188, 159, 1)
+        Fill: =RGBA(50, 86, 160, 1)
+        Height: =302
+        OnSelect: =Navigate(Galeria_OrdenProductos)
+        Width: =353
+        X: =776
+        Y: =205
+        ZIndex: =7
+
+    Label4_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =173
+        Size: =25
+        Text: ="Ingresar a la Galería de Ordenes de Productos"
+        Width: =281
+        X: =812
+        Y: =269
+        ZIndex: =8
+

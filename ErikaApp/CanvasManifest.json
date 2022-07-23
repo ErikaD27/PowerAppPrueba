@@ -102,10 +102,12 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
+    "Inicio",
     "Galeria_RegistroProductos",
     "Formulario_RegistroProductos",
-    "Succesfull",
+    "Succesfull_Registro",
     "Galeria_OrdenProductos",
-    "Formulario_OrdenProductos"
+    "Formulario_OrdenProductos",
+    "Succesfull_OrdenProductos"
   ]
 }

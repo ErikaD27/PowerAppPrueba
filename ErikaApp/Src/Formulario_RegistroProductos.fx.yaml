@@ -7,7 +7,7 @@ Formulario_RegistroProductos As screen:
         Height: =635
         Item: =Gallery4.Selected
         NumberOfColumns: =2
-        OnSuccess: =Navigate(Succesfull)
+        OnSuccess: =Navigate(Succesfull_Registro)
         Width: =1322
         X: =24
         Y: =113

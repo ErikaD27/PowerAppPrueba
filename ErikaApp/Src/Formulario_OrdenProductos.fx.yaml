@@ -48,6 +48,7 @@ Formulario_OrdenProductos As screen:
 
     FormularioOrden As form:
         DataSource: =orden_producto
+        DefaultMode: =FormMode.New
         Height: =503
         NumberOfColumns: =2
         Width: =1316

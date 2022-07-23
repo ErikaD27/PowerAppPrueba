@@ -66,7 +66,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -239,7 +239,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconCheck.ID%",
       "Name": "iconCheck1",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -294,12 +294,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Y",
+          "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "X",
+          "PropertyName": "Y",
           "RuleProviderType": "Unknown"
         },
         {
@@ -399,7 +399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconCircle.ID%",
       "Name": "iconCircle1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -444,12 +444,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Y",
+          "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "X",
+          "PropertyName": "Y",
           "RuleProviderType": "Unknown"
         },
         {
@@ -642,7 +642,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
         {
@@ -652,7 +652,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "X",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -684,7 +684,7 @@
       "StyleName": "basicNoSizeLabelStyle",
       "Type": "ControlInfo"
     },
-    "Succesfull": {
+    "Succesfull_Registro": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -704,18 +704,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Succesfull",
+      "Name": "Succesfull_Registro",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -725,17 +720,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -747,11 +737,21 @@
           "Category": "Design",
           "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Succesfull"
+  "TopParentName": "Succesfull_Registro"
 }
